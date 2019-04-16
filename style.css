@@ -1,0 +1,39 @@
+
+.my-container {
+	display: flex;
+}
+
+.nav {
+	overflow: hidden;
+}
+
+.nav .-primary {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav .-primary > li {
+	flex-grow: 1;
+}
+
+.nav .-primary a {
+	text-decoration: none;
+	padding: 10px 10px;
+}
+
+.nav:not(.--jsfied) {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/*hide list items*/
+.nav .--hidden {
+	display: none;
+}
+
+.-secondary {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
